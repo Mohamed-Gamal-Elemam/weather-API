@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark p-3"
+      style="background-color: #1e202b"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bolder" href="#"> Weather</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-flex justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav navite">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="contentBox">
+      <section class="container w-75 m-auto p-5 d-flex">
+        <input
+          type="text"
+          class="form-control rounded-5 w-75 border-none shadow-none bg-light"
+          placeholder="find your location"
+          id="nexdate"
+        />
+        <button class="btn rounded-5 bg-light">Search</button>
+      </section>
+      <!-- end search  -->
+      <section class="row gx-3 w-75 m-auto p-3">
+        <!-- today -->
+        <div class="col-md-4">
+          <div class="mainCard rounded-3 p-1 shadow">
+            <div
+              class="d-flex justify-content-between px-2 align-items-center headOfCard rounded"
+            >
+              <p class="m-0 descr" id="today">Friday</p>
+              <p class="m-0 descr">
+                <span id="todayDate">18</span>
+                <span id="monthName"> January</span>
+              </p>
+            </div>
+
+            <div class="p-3">
+              <h6 id="city" class="text-white">Cairo</h6>
+              <div class="d-flex justify-content-between">
+                <div
+                  class="w-50 d-flex justify-content-center align-items-center"
+                >
+                  <h1><span id="todayTemp">4</span><sup>o</sup>C</h1>
+                </div>
+                <div class="w-50">
+                  <img
+                    class="w-100"
+                    src="./img/122.webp"
+                    alt=""
+                    id="iconToday"
+                  />
+                </div>
+              </div>
+              <div class="my-3">
+                <p class="text-info" id="todayDes">Overcast</p>
+
+                <i class="fa-solid fa-umbrella text-white mx-1">
+                  <span id="todayUmb" class="fotCart"> 20%</span>
+                </i>
+                <i class="fa-solid fa-wind text-white mx-1">
+                  <span id="todaywind" class="fotCart">18k/H</span>
+                </i>
+                <i class="fa-solid fa-compass text-white mx-1">
+                  <span id="todaywindD" class="fotCart">East</span>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-md-4">
+          <div class="mainCard rounded-3 p-1 shadow">
+            <div class="text-center px-2 align-items-center headOfCard rounded">
+              <p class="m-0 text-center descr tomoro">Friday</p>
+            </div>
+
+            <div class="p-3">
+              <!-- <h6 class="text-white">Cairo</h6> -->
+              <div class="text-center my-4">
+                <img
+                  src="./img/122.webp"
+                  alt=""
+                  class="py-3 mx-auto mt-2 mb-1 tomoroicon"
+                />
+                <h4 class="text-white">
+                  <span class="tomoroTM">20</span> <sup>o</sup>C
+                </h4>
+                <h6 class="descr">
+                  <span class="tomoroTi">25</span><sup>o</sup>C
+                </h6>
+              </div>
+              <div class="my-4">
+                <p class="text-info text-center mb-4 tomoroDes">Overcast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="col-md-4">
+          <div class="mainCard rounded-3 p-1 shadow">
+            <div class="text-center px-2 align-items-center headOfCard rounded">
+              <p class="m-0 text-center descr tomoro">Friday</p>
+            </div>
+
+            <div class="p-3">
+              <!-- <h6 class="text-white">Cairo</h6> -->
+              <div class="text-center my-4">
+                <img
+                  src="./img/122.webp"
+                  alt=""
+                  class="py-3 mx-auto mt-2 mb-1 tomoroicon"
+                />
+                <h4 class="text-white">
+                  <span class="tomoroTM">24</span> <sup>o</sup>C
+                </h4>
+                <h6 class="descr">
+                  <span class="tomoroTi">25</span><sup>o</sup>C
+                </h6>
+              </div>
+              <div class="my-4">
+                <p class="text-info text-center mb-4 tomoroDes">Overcast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer style="background-color: #1e202b">
+      <section class="container w-75 m-auto p-5 d-flex">
+        <input
+          type="text"
+          class="form-control rounded-5 w-75 border-none shadow-none bg-light"
+          placeholder="Enter your Email to subscribe"
+        />
+        <button class="btn rounded-5 bg-light">subscribe</button>
+
+        <div
+          class="d-flex justify-content-center align-items-center gap-2 ms-4"
+        >
+          <div
+            class="head-box d-flex justify-content-center align-items-center"
+          >
+            <a href="">
+              <i class="fa-brands fa-facebook-f text-info"></i>
+            </a>
+          </div>
+
+          <div
+            class="head-box d-flex justify-content-center align-items-center"
+          >
+            <a href="">
+              <i class="fa-brands fa-twitter text-info"></i>
+            </a>
+          </div>
+
+          <div
+            class="head-box d-flex justify-content-center align-items-center"
+          >
+            <a href="">
+              <i class="fa-brands fa-linkedin-in text-info"></i>
+            </a>
+          </div>
+
+          <div
+            class="head-box d-flex justify-content-center align-items-center"
+          >
+            <a href=""> <i class="fa-brands fa-behance text-info"> </i></a>
+          </div>
+
+          <div
+            class="head-box d-flex justify-content-center align-items-center"
+          >
+            <a href=""><i class="fa-brands fa-youtube text-info"></i></a>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

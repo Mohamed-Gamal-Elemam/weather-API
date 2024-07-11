@@ -1,0 +1,51 @@
+body {
+  background-color: #1e202b;
+}
+.contentBox {
+  background-image: url(../img/empty-asphalt-road-through-modern-city-china.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+:root {
+  --mainColor: #323544;
+  --secondColor: #262936;
+  --colorOfText: rgb(156, 156, 156);
+}
+.descr {
+  color: var(--colorOfText);
+}
+.headOfCard {
+  background-color: var(--secondColor);
+}
+h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.mainCard {
+  background-color: var(--mainColor);
+  margin-top: 10px;
+}
+
+.fotCart {
+  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.navite li {
+  font-size: large;
+  font-weight: bold;
+}
+
+.head-box {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.head-box i {
+  font-size: 20px;
+}
